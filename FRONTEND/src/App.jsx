@@ -6,6 +6,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Contact from './components/ContactModal';
+import StatsSection from './components/StatsSection';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <div id="hero">
         <Hero />
       </div>
+      <StatsSection/>
       <div id="services">
         <Services />
       </div>

@@ -5,11 +5,13 @@ const navbar = () => {
   return (
     <header className="bg-gray-200 shadow-md py-2 px-2 flex justify-between items-center sticky top-0 z-10">
       {/* Logo */}
+      <a href="#hero">
         <img
           src={logo}
           alt="Logo"
           className="h-14 object-contain pl-0"
         />
+        </a>
 
       {/* Navigation Links */}
       <nav>
@@ -17,7 +19,7 @@ const navbar = () => {
           <li>
             <a
               href="#hero"
-              className="hover:text-blue-600 transition duration-300 text-gray-900"
+              className="hover:text-blue-600 text-gray-900 tracking-widest relative inline-block  hover:before:w-full before:absolute before:bottom-0 before:left-1/2 before:bg-blue-600 before:h-[2px] before:w-0 before:transition-all before:duration-300 before:ease-in-out hover:before:left-0"
             >
               Home
             </a>
@@ -25,7 +27,7 @@ const navbar = () => {
           <li>
             <a
               href="#services"
-              className="hover:text-blue-600 transition duration-300 text-gray-900"
+              className="hover:text-blue-600 text-gray-900  tracking-widest relative inline-block  hover:before:w-full before:absolute before:bottom-0 before:left-1/2 before:bg-blue-600 before:h-[2px] before:w-0 before:transition-all before:duration-300 before:ease-in-out hover:before:left-0"
             >
               Services
             </a>
@@ -33,7 +35,7 @@ const navbar = () => {
           <li>
             <a
               href="#Technologies"
-              className="hover:text-blue-600 transition duration-300 text-gray-900"
+              className="hover:text-blue-600 text-gray-900 tracking-widest relative inline-block  hover:before:w-full before:absolute before:bottom-0 before:left-1/2 before:bg-blue-600 before:h-[2px] before:w-0 before:transition-all before:duration-300 before:ease-in-out hover:before:left-0"
             >
               Technologies
             </a>
@@ -41,7 +43,7 @@ const navbar = () => {
           <li>
             <a
               href="#Benefits"
-              className="hover:text-blue-600 transition duration-300 text-gray-900"
+              className="hover:text-blue-600 text-gray-900 tracking-widest relative inline-block  hover:before:w-full before:absolute before:bottom-0 before:left-1/2 before:bg-blue-600 before:h-[2px] before:w-0 before:transition-all before:duration-300 before:ease-in-out hover:before:left-0"
             >
               Benefits
             </a>
@@ -49,7 +51,7 @@ const navbar = () => {
           <li>
             <a
               href="#about"
-              className="hover:text-blue-600 transition duration-300 text-gray-900"
+              className="hover:text-blue-600 text-gray-900 tracking-widest relative inline-block  hover:before:w-full before:absolute before:bottom-0 before:left-1/2 before:bg-blue-600 before:h-[2px] before:w-0 before:transition-all before:duration-300 before:ease-in-out hover:before:left-0"
             >
               About Us
             </a>
@@ -57,7 +59,7 @@ const navbar = () => {
           <li>
             <a
               href="#Contact"
-              className="hover:text-blue-600 transition duration-300 text-gray-900 pr-2"
+              className="hover:text-blue-600 text-gray-900  tracking-widest relative inline-block  hover:before:w-full before:absolute before:bottom-0 before:left-1/2 before:bg-blue-600 before:h-[2px] before:w-0 before:transition-all before:duration-300 before:ease-in-out hover:before:left-0"
               
             >
               Contact Us
