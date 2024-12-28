@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center mt-8 pt-4 border-t border-gray-300 text-sm text-gray-500">
+      <div className="text-center mt-8 pt-4 border-t border-gray-300  text-sm text-gray-500">
         &copy; 2024 Excel IT Solutions. All Rights Reserved.
       </div>
     </footer>

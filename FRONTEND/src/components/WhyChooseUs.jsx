@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
     <section className="py-16 px-8 text-center bg-white mb-8" id="why-choose-us">
       <h2 className="text-4xl font-semibold text-blue-600 mb-8 uppercase tracking-wider">Why Choose Us</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mt-8">
-        <div className="bg-white p-8 shadow-xl border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all  hover:translate-y-[-10px] hover:text-blue-600 hover:bg-gray-200 flex flex-col items-center justify-center h-64 w-60 ">
+        <div className="bg-white p-8 shadow-xl border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all  hover:translate-y-[-10px] hover:text-blue-600  flex flex-col items-center justify-center h-64 w-60 ">
           <FaUsers className="text-5xl text-blue-600 mb-4 transition-colors hover:text-blue-800 " />
           <h3 className="text-xl font-semibold mb-4 text-gray-800">Expert Team</h3>
           <p className="text-gray-600 text-sm text-center">Our team of experienced professionals is dedicated to delivering top-notch solutions.</p>
