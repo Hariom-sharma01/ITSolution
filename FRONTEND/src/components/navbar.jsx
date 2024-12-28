@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/imgs/transparent-background,-shadow-designify.png';
+import logo from '../assets/imgs/Resized_Excel_IT_Solution_logo.png';
 
 const navbar = () => {
   return (
