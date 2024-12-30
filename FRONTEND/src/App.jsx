@@ -1,35 +1,16 @@
 import React from 'react';
-import Navbar from './components/navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import WhyChooseUs from './components/WhyChooseUs';
-import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
-import Contact from './components/ContactModal';
-import StatsSection from './components/StatsSection';
+import Home from './pages/Home';
+import Technologies from './pages/Technologies';
+import About from './pages/About';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <div id="Contact">
-        <Contact />
-      </div>
-      <div id="hero">
-        <Hero />
-      </div>
-      <StatsSection/>
-      <div id="services">
-        <Services />
-      </div>
-      <div id="why-choose-us">
-        <WhyChooseUs />
-      </div>
-      <div id="testimonials">
-        <Testimonials />
-      </div>
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path='/Technologies' element={<Technologies/>} />
+      <Route path='/About' element={<About/>} />
+    </Routes>
   );
 }
 

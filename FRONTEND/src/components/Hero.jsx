@@ -4,7 +4,7 @@ import img2 from '../assets/imgs/it2.jpg';
 import img3 from '../assets/imgs/it3.jpg';
 
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0); // Track the current slide
+  const [currentSlide, setCurrentSlide] = useState(0); 
 
   const slides = [
     { image: img1, title: 'Empower Your Digital Presence', description: 'Professional web development and IT solutions for businesses of all sizes.' },

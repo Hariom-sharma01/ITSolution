@@ -1,8 +1,8 @@
 import React from 'react';
-import webDevelopmentIcon from '../assets/icons/web.png'; // Example path
-import ecommerceIcon from '../assets/icons/app.png'; // Example path
-import itConsultingIcon from '../assets/icons/Itsol.png'; // Example path
-import seoMarketingIcon from '../assets/icons/dbcreation.png'; // Example path
+import webDevelopmentIcon from '../assets/icons/web.png'; 
+import ecommerceIcon from '../assets/icons/app.png'; 
+import itConsultingIcon from '../assets/icons/Itsol.png';
+import seoMarketingIcon from '../assets/icons/dbcreation.png';
 
 const Services = () => {
   return (
