@@ -2,18 +2,19 @@ import React from "react";
 
 const StatsSection = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-            Empowering Businesses Through Technology
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Excel IT Solutions is your partner for building robust digital
-            solutions, ensuring growth, efficiency, and reliability in all your
-            IT and website needs.
-          </p>
+    <section className="text-white body-font">
+      <div className="container px-5 pt-10 mx-auto">
+        {/* Centered 'Explore Services' Button */}
+        <div className="flex justify-center mb-2">
+          <a
+            href="#services"
+            className="bg-teal-500 text-white px-6 py-3 rounded-md font-bold hover:bg-teal-600 transition-all hover:text-black"
+          >
+            Explore Services
+          </a>
         </div>
+
+        {/* Stats Grid */}
         <div className="flex flex-wrap -m-4 text-center">
           {[
             {
@@ -24,7 +25,7 @@ const StatsSection = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                  className="text-white w-12 h-12 mb-3 inline-block"
                   viewBox="0 0 24 24"
                 >
                   <path d="M8 17l4 4 4-4m-4-5v9"></path>
@@ -42,7 +43,7 @@ const StatsSection = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                  className="text-white w-12 h-12 mb-3 inline-block"
                   viewBox="0 0 24 24"
                 >
                   <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
@@ -61,7 +62,7 @@ const StatsSection = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                  className="text-white w-12 h-12 mb-3 inline-block"
                   viewBox="0 0 24 24"
                 >
                   <path d="M3 18v-6a9 9 0 0118 0v6"></path>
@@ -79,7 +80,7 @@ const StatsSection = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                  className="text-white w-12 h-12 mb-3 inline-block"
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -89,13 +90,10 @@ const StatsSection = () => {
               label: "IT Solutions Delivered",
             },
           ].map((stat, index) => (
-            <div
-              key={index}
-              className="p-4 md:w-1/4 sm:w-1/2 w-full"
-            >
-              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div key={index} className="p-4 md:w-1/4 sm:w-1/2 w-full mt-5">
+              <div className="border-gray-200 px-4 py-6 rounded-lg">
                 {stat.icon}
-                <h2 className="title-font font-medium text-3xl text-gray-900">
+                <h2 className="title-font font-medium text-3xl text-white">
                   {stat.count}
                 </h2>
                 <p className="leading-relaxed">{stat.label}</p>

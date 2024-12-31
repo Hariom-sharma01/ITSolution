@@ -1,22 +1,20 @@
 import React from "react";
 import Navbar from '../components/navbar';
 import Footer from '../components/Footer';
+import Contact from '../components/ContactModal';
 const About= () => {
   return (
     <>
     <Navbar/>
+    <Contact/>
     <div className="bg-gray-100 text-gray-800">
       {/* Main Section */}
       <section
         className="py-16"
-        style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1611572728531-d9a60feaac62?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-        }}
       >
         <div className="container mx-auto px-4">
           {/* Header */}
-          <h1 className="text-4xl font-extrabold text-center mb-8 text-gray-800 animate__animated animate__zoomIn">
+          <h1 className="text-4xl font-extrabold text-center mb-8 text-blue-600 animate__animated animate__zoomIn">
             About Excel IT Solutions
           </h1>
           <p className="text-center text-gray-600 mb-12 animate__animated animate__fadeInUp animate__delay-1s">
@@ -26,7 +24,7 @@ const About= () => {
 
           {/* Company Overview */}
           <div className="mb-16 animate__animated animate__fadeInLeft">
-            <h2 className="text-3xl font-semibold mb-4">Who We Are</h2>
+            <h2 className="text-3xl font-semibold mb-4 text-blue-500">Who We Are</h2>
             <p className="text-gray-700 leading-relaxed">
               Excel IT Solutions is a leading provider of comprehensive IT
               services and solutions. Established with a vision to empower
@@ -45,12 +43,12 @@ const About= () => {
 
           {/* Mission & Vision */}
           <div className="mb-16">
-            <h2 className="text-3xl font-semibold mb-4 text-center animate__animated animate__fadeInDown">
+            <h2 className="text-3xl font-semibold mb-4 text-center animate__animated animate__fadeInDown text-blue-600">
               Our Mission & Vision
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-indigo-100 transform transition-transform duration-300 hover:scale-105">
-                <h3 className="text-xl font-bold mb-2 text-indigo-600">
+                <h3 className="text-xl font-bold mb-2 text-gray-800">
                   Mission
                 </h3>
                 <p className="text-gray-700">
@@ -60,7 +58,7 @@ const About= () => {
                 </p>
               </div>
               <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-indigo-100 transform transition-transform duration-300 hover:scale-105">
-                <h3 className="text-xl font-bold mb-2 text-indigo-600">
+                <h3 className="text-xl font-bold mb-2 text-gray-800">
                   Vision
                 </h3>
                 <p className="text-gray-700">
@@ -74,7 +72,7 @@ const About= () => {
 
           {/* Core Values */}
           <div className="mb-16 animate__animated animate__fadeInUp">
-            <h2 className="text-3xl font-semibold mb-4 text-center">
+            <h2 className="text-3xl font-semibold mb-4 text-center text-blue-600">
               Our Core Values
             </h2>
             <ul className="list-disc list-inside text-gray-700 leading-relaxed pl-6">
@@ -88,7 +86,7 @@ const About= () => {
 
           {/* Team Section */}
           <div className="mb-16">
-            <h2 className="text-3xl font-semibold mb-4 text-center animate__animated animate__fadeIn">
+            <h2 className="text-3xl font-semibold mb-4 text-center animate__animated animate__fadeIn text-blue-600">
               Meet Our Team
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -117,14 +115,14 @@ const About= () => {
 
           {/* Call to Action */}
           <div className="text-center mt-16 animate__animated animate__bounceIn">
-            <h2 className="text-3xl font-bold mb-4">Ready to Work with Us?</h2>
+            <h2 className="text-3xl font-bold mb-4 text-blue-600">Ready to Work with Us?</h2>
             <p className="text-gray-600 mb-8">
               Contact us today to learn more about our services and how we can
               help your business achieve its goals.
             </p>
             <a
               href="/contact"
-              className="px-8 py-3 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700"
+              className="px-8 py-3 bg-indigo-600 text-white font-bold rounded hover:bg-indigo-700 hover:text-black"
             >
               Contact Us
             </a>

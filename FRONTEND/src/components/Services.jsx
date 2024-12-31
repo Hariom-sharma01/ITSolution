@@ -1,8 +1,12 @@
 import React from 'react';
 import webDevelopmentIcon from '../assets/icons/web.png'; 
-import ecommerceIcon from '../assets/icons/app.png'; 
+import appdev from '../assets/icons/app.png'; 
 import itConsultingIcon from '../assets/icons/Itsol.png';
 import seoMarketingIcon from '../assets/icons/dbcreation.png';
+import Cybersec from '../assets/icons/Cybersecurity.png';
+import dbcreation from '../assets/icons/database.png';
+import dbmigration from '../assets/icons/dbmigration.png';
+import iot from '../assets/icons/IOT.png';
 
 const Services = () => {
   return (
@@ -15,9 +19,9 @@ const Services = () => {
           <p className="text-gray-600 text-sm group-hover:text-white">Custom websites built with modern technologies to meet your business goals.</p>
         </div>
         <div className="service-card bg-white p-6 rounded-lg shadow-lg transform transition-all hover:bg-blue-400 hover:translate-y-[-10px] group flex-shrink-0 w-64 mb-4">
-          <img src={ecommerceIcon} alt="E-Commerce Solutions" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800 group-hover:text-white">E-Commerce Solutions</h3>
-          <p className="text-gray-600 text-sm group-hover:text-white">Scalable e-commerce platforms to help you sell your products online seamlessly.</p>
+          <img src={appdev} alt="E-Commerce Solutions" className="mb-4" />
+          <h3 className="text-lg font-semibold mb-4 text-gray-800 group-hover:text-white">App Development</h3>
+          <p className="text-gray-600 text-sm group-hover:text-white">Explore Tailored App Development for Your Business.</p>
         </div>
         <div className="service-card bg-white p-6 rounded-lg shadow-lg transform transition-all hover:bg-blue-400 hover:translate-y-[-10px] group flex-shrink-0 w-64 mb-4">
           <img src={itConsultingIcon} alt="IT Consulting" className="mb-4" />
@@ -28,6 +32,26 @@ const Services = () => {
           <img src={seoMarketingIcon} alt="SEO & Marketing" className="mb-4" />
           <h3 className="text-lg font-semibold mb-4 text-gray-800 group-hover:text-white">SEO & Marketing</h3>
           <p className="text-gray-600 text-sm group-hover:text-white">Boost your online presence and drive more traffic with our SEO and digital marketing services.</p>
+        </div>
+        <div className="service-card bg-white p-6 rounded-lg shadow-lg transform transition-all hover:bg-blue-400 hover:translate-y-[-10px] group flex-shrink-0 w-64 mb-4">
+          <img src={Cybersec} alt="SEO & Marketing" className="mb-4" />
+          <h3 className="text-lg font-semibold mb-4 text-gray-800 group-hover:text-white">Cybersecurity Solutions</h3>
+          <p className="text-gray-600 text-sm group-hover:text-white">Fortify Your Business with Expert Cybersecurity Solutions.</p>
+        </div>
+        <div className="service-card bg-white p-6 rounded-lg shadow-lg transform transition-all hover:bg-blue-400 hover:translate-y-[-10px] group flex-shrink-0 w-64 mb-4">
+          <img src={iot} alt="SEO & Marketing" className="mb-4" />
+          <h3 className="text-lg font-semibold mb-4 text-gray-800 group-hover:text-white">IOT Solutions</h3>
+          <p className="text-gray-600 text-sm group-hover:text-white">Experience the Power of Connectivity with Our IoT Services.</p>
+        </div>
+        <div className="service-card bg-white p-6 rounded-lg shadow-lg transform transition-all hover:bg-blue-400 hover:translate-y-[-10px] group flex-shrink-0 w-64 mb-4">
+          <img src={dbmigration} alt="SEO & Marketing" className="mb-4" />
+          <h3 className="text-lg font-semibold mb-4 text-gray-800 group-hover:text-white">Database Migration</h3>
+          <p className="text-gray-600 text-sm group-hover:text-white">Migrate, Optimize, and Scale with Expert Data Migration Services.</p>
+        </div>
+        <div className="service-card bg-white p-6 rounded-lg shadow-lg transform transition-all hover:bg-blue-400 hover:translate-y-[-10px] group flex-shrink-0 w-64 mb-4">
+          <img src={dbcreation} alt="SEO & Marketing" className="mb-4" />
+          <h3 className="text-lg font-semibold mb-4 text-gray-800 group-hover:text-white">Database Creation</h3>
+          <p className="text-gray-600 text-sm group-hover:text-white">Empowering Your Data with Scalable Database Solutions.</p>
         </div>
         
       </div>
