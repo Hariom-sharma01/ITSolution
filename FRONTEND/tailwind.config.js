@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontWeight: {
+        'medium-plus': 500, // Custom weight between medium and semibold
+      }
+    },
   },
   plugins: [],
 }

@@ -1,55 +1,52 @@
 import React from 'react';
-import webDevelopmentIcon from '../assets/icons/web.png'; // Example path
-import appdevelopmentIcon from '../assets/icons/app.png'; // Example path
-import itConsultingIcon from '../assets/icons/Itsol.png'; // Example path
-import seoMarketingIcon from '../assets/icons/dbcreation.png';
-import iotIcon from '../assets/icons/IOT.png'; // Example path
-import cybersecurityIcon from '../assets/icons/Cybersecurity.png';
-import dbMigrationIcon from '../assets/icons/dbmigration.png';
-import databaseIcon from '../assets/icons/database.png';
+import databaseManagementAndMigration from '../assets/icons/databaseManagementAndMigration.avif';
+import webDevAndEcom from '../assets/icons/webDevAndEcom.png';
+import iotSolution from '../assets/icons/IOTServices.avif';
+import cloudAndDeveops from '../assets/icons/cloudComputingAndDevops.avif';
+import softwareSupportAndMaintainance from '../assets/icons/softwareSupportAndMaintainance.avif';
+import networkAndCybersecurity from '../assets/icons/networkAndCybersecurity.avif';
+import gisSoftwareDev from '../assets/icons/gisSoftwareDevelopment.avif';
 import arrowIcon from '../assets/icons/right-arrow.png';
 import '../CSS/services.css';
+
+
 const serviceCards = [
   {
-    icon: webDevelopmentIcon,
-    title: "Web Development",
+    icon: webDevAndEcom,
+    title: "Web Development & E-commerce Solutions",
     description: "Custom websites built with modern technologies to meet your business goals.",
   },
   {
-    icon: appdevelopmentIcon,
-    title: "App Development",
-    description: "Explore Tailored App Development for Your Business.",
+    icon: databaseManagementAndMigration,
+    title: "Database Management & Migration",
+    description: "Efficient database management and migration services for your data needs."
   },
   {
-    icon: itConsultingIcon,
-    title: "IT Consulting",
-    description: "Professional advice and solutions to optimize your IT infrastructure and processes.",
+    icon: cloudAndDeveops,
+    title: "Cloud Developement & DevOps",
+    description: "Cloud computing and DevOps solutions to streamline your IT operations."
   },
   {
-    icon: seoMarketingIcon,
-    title: "SEO & Marketing",
-    description: "Boost your online presence and drive more traffic with our SEO and digital marketing services.",
+    icon: softwareSupportAndMaintainance,
+    title: "Software Support And Maintainance",
+    description: "Ensure your software runs seamlessly with our expert support and maintenance services."
   },
   {
-    icon: cybersecurityIcon,
-    title: "Cybersecurity Solutions",
-    description: "Fortify Your Business with Expert Cybersecurity Solutions.",
+    icon: networkAndCybersecurity,
+    title: "Network and Cybersecurity Solutions",
+    description: "Fortify Your Business with Expert Cybersecurity and Networking Solutions.",
   },
   {
-    icon: iotIcon,
+    icon: iotSolution,
     title: "IoT Solutions",
     description: "Experience the Power of Connectivity with Our IoT Services.",
   },
   {
-    icon: dbMigrationIcon,
-    title: "Database Migration",
-    description: "Migrate, Optimize, and Scale with Expert Data Migration Services.",
-  },
-  {
-    icon: databaseIcon,
-    title: "Database Creation",
-    description: "Empowering Your Data with Scalable Database Solutions.",
-  },
+    icon: gisSoftwareDev,
+    title: "GIS Software Development and Services",
+    description: "Empower your decisions with cutting-edge Geographic Information System (GIS) software.",
+  }
+  
 ];
 
 const Services = () => {
@@ -61,7 +58,7 @@ const Services = () => {
       {serviceCards.map((card, index) => (
       <div
         key={index}
-        className="service-card cursor-pointer bg-white p-3 border-t-2 border-b-2 border-blue-600 rounded-lg shadow-md hover:shadow-lg transform transition-all duration-300 hover:scale-105 group flex-shrink-0 w-48 h-60 mb-4 relative overflow-hidden"
+        className="service-card cursor-pointer bg-white  border-t-2 border-b-2 border-blue-600 rounded-lg shadow-md hover:shadow-lg transform transition-all duration-300 hover:scale-105 group flex-shrink-0 w-48 h-60 mb-4 relative overflow-hidden"
       >
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
@@ -70,11 +67,11 @@ const Services = () => {
         <img
           src={card.icon}
           alt={card.title}
-          className="mb-3 z-10 relative w-32 h-32 mx-auto transition-transform duration-300 group-hover:scale-110"
+          className=" z-10 relative w-full h-36 x-auto transition-transform duration-300 group-hover:scale-110"
         />
 
         {/* Title */}
-        <h3 className="text-xl font-bold text-gray-800 mb-2 z-10 relative text-center group-hover:text-white transition-colors duration-300">
+        <h3 className="text-lg font-medium text-gray-800 pb-2 z-10 relative text-center group-hover:text-white transition-colors duration-300">
           {card.title}
         </h3>
 
