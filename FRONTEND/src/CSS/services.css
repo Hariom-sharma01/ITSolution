@@ -1,0 +1,112 @@
+/* Initial state for the service card */
+.service-card {
+    position: relative;
+    padding: 10px;
+    height: 260px; /* Initial height of the card */
+    background-color: white;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    overflow: hidden; /* Prevent the borders from overflowing */
+  }
+  
+  /* Image and heading hiding on hover */
+  .service-card img,
+  .service-card h3 {
+    transition: opacity 0.3s ease;
+  }
+  
+  /* On hover, hide the image and heading */
+  .service-card:hover img,
+  .service-card:hover h3 {
+    opacity: 0;
+    
+  }
+  
+  /* For the description */
+  .service-description {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 20px; /* Position the description from the top */
+    left: 4px;
+    right: 4px;
+    padding-top: 10px; /* Add padding to make it appear with space */
+    transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
+    transform: translateY(-20px); /* Initially move the description up */
+  }
+  
+  /* Make the paragraph appear on hover and slide down */
+  .service-card:hover .service-description {
+    opacity: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    visibility: visible;
+    transform: translateY(1); /* Slide down the description */
+    top: 20px; /* Position it with some padding from the top */
+  }
+  
+  /* Border animation */
+  .service-card::before,
+  .service-card::after {
+    content: "";
+    position: absolute;
+    background-color: #4764c5; 
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    transition: all 0.5s ease;
+  }
+  
+  /* Position the top and bottom borders */
+  .service-card::before {
+    top: 0;
+  }
+  
+  .service-card::after {
+    bottom: 0;
+  }
+  
+  /* Keyframes for moving out and in */
+  @keyframes moveOut {
+    0% {
+      left: 50%;
+      width: 0%;
+    }
+    50% {
+      left: 0%;
+      width: 100%;
+    }
+    100% {
+      left: 0%;
+      width: 100%;
+    }
+  }
+  
+  @keyframes moveIn {
+    0% {
+      left: 0%;
+      width: 100%;
+    }
+    100% {
+      left: 50%;
+      width: 0%;
+    }
+  }
+  
+  /* On hover, animate borders */
+  .service-card:hover::before,
+  .service-card:hover::after {
+    animation: moveOut 0.5s forwards;
+  }
+  
+  .service-card:not(:hover)::before,
+  .service-card:not(:hover)::after {
+    animation: moveIn 0.5s forwards;
+  }
+  
+  /* Optional: Box-shadow animation on hover */
+  .service-card:hover {
+    box-shadow: inset 0 0 0 2px #1e40af;
+    /* border: 2px solid white; */
+    background:  #4d79d6;
+  }
+  
