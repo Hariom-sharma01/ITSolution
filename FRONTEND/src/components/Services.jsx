@@ -9,81 +9,88 @@ import dbMigrationIcon from '../assets/icons/dbmigration.png';
 import databaseIcon from '../assets/icons/database.png';
 import arrowIcon from '../assets/icons/right-arrow.png';
 import '../CSS/services.css';
+const serviceCards = [
+  {
+    icon: webDevelopmentIcon,
+    title: "Web Development",
+    description: "Custom websites built with modern technologies to meet your business goals.",
+  },
+  {
+    icon: appdevelopmentIcon,
+    title: "App Development",
+    description: "Explore Tailored App Development for Your Business.",
+  },
+  {
+    icon: itConsultingIcon,
+    title: "IT Consulting",
+    description: "Professional advice and solutions to optimize your IT infrastructure and processes.",
+  },
+  {
+    icon: seoMarketingIcon,
+    title: "SEO & Marketing",
+    description: "Boost your online presence and drive more traffic with our SEO and digital marketing services.",
+  },
+  {
+    icon: cybersecurityIcon,
+    title: "Cybersecurity Solutions",
+    description: "Fortify Your Business with Expert Cybersecurity Solutions.",
+  },
+  {
+    icon: iotIcon,
+    title: "IoT Solutions",
+    description: "Experience the Power of Connectivity with Our IoT Services.",
+  },
+  {
+    icon: dbMigrationIcon,
+    title: "Database Migration",
+    description: "Migrate, Optimize, and Scale with Expert Data Migration Services.",
+  },
+  {
+    icon: databaseIcon,
+    title: "Database Creation",
+    description: "Empowering Your Data with Scalable Database Solutions.",
+  },
+];
 
 const Services = () => {
   return (
-    <section className="services py-16 px-8 text-center bg-gray-100">
+    <section className="services py-8 px-2 text-center bg-gray-100">
       <h2 className="text-4xl font-semibold text-blue-600 mb-8 uppercase tracking-wider">Our Services</h2>
-      <div className="services-container flex flex-wrap space-x-4 px-4 py-8 justify-center items-center gap-y-8 gap-x-4">
-        <div className="service-card cursor-pointer bg-white p-4 rounded-lg shadow-lg border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all hover:translate-y-[-10px] group flex-shrink-0 w-48 mb-4 relative overflow-hidden">
-          <img src={webDevelopmentIcon} alt="Web Development" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">Web Development</h3>
-          <p className="service-description text-gray-800 text-lg text-center absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 group-hover:visible">
-            Custom websites built with modern technologies to meet your business goals.
-          </p>
-          <img src={arrowIcon} alt="arrow" className="absolute  bottom-4 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-0 group-hover:opacity-100"  />
+      <div className="services-container flex flex-wrap  px-2 py-4 justify-center items-center gap-y-8 gap-x-4">
 
-        </div>
+      {serviceCards.map((card, index) => (
+      <div
+        key={index}
+        className="service-card cursor-pointer bg-white p-3 border-t-2 border-b-2 border-blue-600 rounded-lg shadow-md hover:shadow-lg transform transition-all duration-300 hover:scale-105 group flex-shrink-0 w-48 h-60 mb-4 relative overflow-hidden"
+      >
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
 
+        {/* Icon */}
+        <img
+          src={card.icon}
+          alt={card.title}
+          className="mb-3 z-10 relative w-32 h-32 mx-auto transition-transform duration-300 group-hover:scale-110"
+        />
 
-        <div className="service-card cursor-pointer bg-white p-4 rounded-lg shadow-lg border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all hover:translate-y-[-10px] group flex-shrink-0 w-48 mb-4 relative overflow-hidden">
-          <img src={appdevelopmentIcon} alt="App-Development Solutions" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">App Development</h3>
-          <p className="service-description text-gray-600 text-lg absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 group-hover:visible">
-          Explore Tailored App Development for Your Business.
-          </p>
-          <img src={arrowIcon} alt="arrow" className="absolute  bottom-4 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-0 group-hover:opacity-100"  />
-        </div>
+        {/* Title */}
+        <h3 className="text-xl font-bold text-gray-800 mb-2 z-10 relative text-center group-hover:text-white transition-colors duration-300">
+          {card.title}
+        </h3>
 
-        <div className="service-card cursor-pointer bg-white p-4 rounded-lg shadow-lg border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all hover:translate-y-[-10px] group flex-shrink-0 w-48 mb-4 relative overflow-hidden">
-          <img src={itConsultingIcon} alt="IT Consulting" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">IT Consulting</h3>
-          <p className="service-description text-gray-600 text-lg absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 group-hover:visible">
-            Professional advice and solutions to optimize your IT infrastructure and processes.
-          </p>
-          <img src={arrowIcon} alt="arrow" className="absolute  bottom-4 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-0 group-hover:opacity-100"  />
-        </div>
+        {/* Description */}
+        <p className="service-description text-gray-700 text-xl font-medium text-center px-2 absolute bottom-4 left-2 right-2 opacity-0 z-10 group-hover:opacity-100 transition-opacity duration-300 group-hover:text-white">
+          {card.description}
+        </p>
 
-        <div className="service-card cursor-pointer bg-white p-4 rounded-lg shadow-lg border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all hover:translate-y-[-10px] group flex-shrink-0 w-48 mb-4 relative overflow-hidden">
-          <img src={seoMarketingIcon} alt="SEO & Marketing" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">SEO & Marketing</h3>
-          <p className="service-description text-gray-600 text-lg absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 group-hover:visible">
-            Boost your online presence and drive more traffic with our SEO and digital marketing services.
-          </p>
-          <img src={arrowIcon} alt="arrow" className="absolute  bottom-4 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-0 group-hover:opacity-100"  />
-        </div>
-        <div className="service-card cursor-pointer bg-white p-4 rounded-lg shadow-lg border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all hover:translate-y-[-10px] group flex-shrink-0 w-48 mb-4 relative overflow-hidden">
-          <img src={cybersecurityIcon} alt="Cybersecurity" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">Cybersecurity Solutions</h3>
-          <p className="service-description text-gray-600 text-lg absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 group-hover:visible">
-          Fortify Your Business with Expert Cybersecurity Solutions.
-          </p>
-          <img src={arrowIcon} alt="arrow" className="absolute  bottom-4 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-0 group-hover:opacity-100"  />
-        </div>
-        <div className="service-card cursor-pointer bg-white p-4 rounded-lg shadow-lg border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all hover:translate-y-[-10px] group flex-shrink-0 w-48 mb-4 relative overflow-hidden">
-          <img src={iotIcon} alt="IOT Icon" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">IOT Solutions</h3>
-          <p className="service-description text-gray-600 text-lg absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 group-hover:visible">
-          Experience the Power of Connectivity with Our IoT Services.
-          </p>
-          <img src={arrowIcon} alt="arrow" className="absolute  bottom-4 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-0 group-hover:opacity-100"  />
-        </div>
-        <div className="service-card cursor-pointer bg-white p-4 rounded-lg shadow-lg border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all hover:translate-y-[-10px] group flex-shrink-0 w-48 mb-4 relative overflow-hidden">
-          <img src={dbMigrationIcon} alt="DB Migration" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">Database Migration</h3>
-          <p className="service-description text-gray-600 text-lg absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 group-hover:visible">
-          Migrate, Optimize, and Scale with Expert Data Migration Services.
-          </p>
-          <img src={arrowIcon} alt="arrow" className="absolute  bottom-4 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-0 group-hover:opacity-100"  />
-        </div> 
-        <div className="service-card cursor-pointer bg-white p-4 rounded-lg shadow-lg border-t-4 border-b-4 border-blue-600 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg transform transition-all hover:translate-y-[-10px] group flex-shrink-0 w-48 mb-4 relative overflow-hidden">
-          <img src={databaseIcon} alt="DB Migration" className="mb-4" />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">Database Creation</h3>
-          <p className="service-description text-gray-600 text-lg absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 group-hover:visible">
-          Empowering Your Data with Scalable Database Solutions.
-          </p>
-          <img src={arrowIcon} alt="arrow" className="absolute  bottom-4 left-1/2 transform -translate-x-1/2 h-12 w-12 opacity-0 group-hover:opacity-100"  />
-        </div> 
+        {/* Arrow Icon */}
+        <img
+          src={arrowIcon}
+          alt="arrow"
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 h-8 w-8 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        />
+      </div>
+    ))}
       </div>
     </section>
   );

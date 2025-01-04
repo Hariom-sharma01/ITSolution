@@ -49,11 +49,11 @@
   .service-card::after {
     content: "";
     position: absolute;
-    background-color: #4764c5; /* Border color */
+    background-color: #4764c5; 
     height: 2px;
     width: 0%;
     left: 50%;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
   
   /* Position the top and bottom borders */
