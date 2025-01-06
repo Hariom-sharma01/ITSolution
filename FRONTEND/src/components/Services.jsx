@@ -4,7 +4,7 @@ import webDevAndEcom from '../assets/icons/webDevAndEcom.png';
 import iotSolution from '../assets/icons/IOTServices.avif';
 import cloudAndDeveops from '../assets/icons/cloudComputingAndDevops.avif';
 import softwareSupportAndMaintainance from '../assets/icons/softwareSupportAndMaintainance.avif';
-import networkAndCybersecurity from '../assets/icons/networkAndCybersecurity.avif';
+import networkAndCybersecurity from '../assets/icons/networkAndCyberSecurity.avif';
 import gisSoftwareDev from '../assets/icons/gisSoftwareDevelopment.avif';
 import arrowIcon from '../assets/icons/right-arrow.png';
 import '../CSS/services.css';
