@@ -19,6 +19,7 @@ import rubyIcon from "../assets/service_icons/ruby.png";
 import mongoIcon from "../assets/service_icons/mongo.png";
 import mysqlIcon from "../assets/service_icons/mysql.png";
 import postgresIcon from "../assets/service_icons/postgres.jpeg";
+const {databaseService,iotServices,cloudDevopsServices,softwareServices,networkAssessmentApproach,gisSoftwareDevelopment } =require('../DATA/details');
 
 
 const ServicesPage = () => {
