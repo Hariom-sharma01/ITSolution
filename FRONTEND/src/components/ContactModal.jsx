@@ -12,7 +12,7 @@ const ContactModal = () => {
     <>
       {/* Floating Icon */}
       <button
-        className="fixed bottom-5 right-5 bg-teal-500 text-white p-4 rounded-full shadow-lg hover:bg-teal-600 transition-all"
+        className="z-30 fixed bottom-5 right-5 bg-teal-500 text-white p-4 rounded-full shadow-lg hover:bg-teal-600 transition-all"
         onClick={toggleModal}
       >
         <FaEnvelope size={24} />

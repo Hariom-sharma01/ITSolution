@@ -107,7 +107,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/About"
+              onClick={() => navigate("/About")}
               className="hover:text-blue-600 cursor-pointer text-gray-900 tracking-widest relative inline-block hover:before:w-full before:absolute before:bottom-0 before:left-1/2 before:bg-blue-600 before:h-[2px] before:w-0 before:transition-all before:duration-300 before:ease-in-out hover:before:left-0"
             >
               About Us
