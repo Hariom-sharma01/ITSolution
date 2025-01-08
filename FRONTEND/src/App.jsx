@@ -1,10 +1,10 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 import Home from './pages/Home';
 import Technologies from './pages/Technologies';
 import About from './pages/About';
 import Benefits from './pages/BenefitsPage';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes,useLocation } from 'react-router-dom';
 import ServicesPage1 from './pages/ServicesPage1';
 import ServicesPage2 from './pages/ServicesPage2';
 import ServicesPage3 from './pages/ServicesPage3';
@@ -14,6 +14,11 @@ import ServicesPage6 from './pages/ServicesPage6';
 import ServicesPage7 from './pages/ServicesPage7';
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);  // Scroll to top when location changes
+  }, [location]);
   return (
     <Routes>
       <Route path="/" element={<Home/>} />
