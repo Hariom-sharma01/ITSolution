@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate, useLocation } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="bg-gray-100 py-12 text-gray-800 text-base">
       <div className="max-w-5xl mx-auto flex flex-wrap justify-between gap-8">
@@ -33,10 +35,10 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#contact"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                onClick={() => navigate("/About")}
+                className="text-gray-600 cursor-pointer hover:text-blue-600 transition-colors"
               >
-                Contact
+                About us
               </a>
             </li>
           </ul>
