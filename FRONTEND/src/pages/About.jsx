@@ -1,12 +1,10 @@
 import React from "react";
 import Navbar from '../components/navbar';
 import Footer from '../components/Footer';
-import Contact from '../components/ContactModal';
 const About= () => {
   return (
     <>
     <Navbar/>
-    <Contact/>
     <div className="bg-gray-100 text-gray-800">
       {/* Main Section */}
       <section

@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/Footer';
-import Contact from '../components/ContactModal';
 
 const Technologies = () => {
   const technologies = [
@@ -76,7 +75,6 @@ const Technologies = () => {
   return (
     <>
     <Navbar/>
-    <Contact/>
     <section className="py-16 bg-gray-100 text-gray-800">
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-8 text-blue-600">Technologies We Work With</h1>

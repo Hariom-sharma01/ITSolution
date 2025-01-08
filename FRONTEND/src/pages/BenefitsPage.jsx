@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
-import Contact from '../components/ContactModal';
 
 const benefitsData = [
     {
@@ -59,7 +58,6 @@ const BenefitsPage = () => {
   return (
     <>
     <Navbar/>
-    <Contact/>
     <div className="bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-5">
         <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-6">
