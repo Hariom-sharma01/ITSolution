@@ -8,41 +8,48 @@ import networkAndCybersecurity from '../assets/icons/networkAndCybersecurity.avi
 import gisSoftwareDev from '../assets/icons/gisSoftwareDevelopment.avif';
 import arrowIcon from '../assets/icons/right-arrow.png';
 import '../CSS/services.css';
-
+import { useNavigate } from 'react-router-dom';
 
 const serviceCards = [
   {
-    icon: webDevAndEcom,
+    id:1,
+    icon:webDevAndEcom,
     title: "Web Development & E-commerce Solutions",
     description: "Custom websites built with modern technologies to meet your business goals.",
   },
   {
-    icon: databaseManagementAndMigration,
+    id:2,
+    icon:databaseManagementAndMigration,
     title: "Database Management & Migration",
     description: "Efficient database management and migration services for your data needs."
   },
   {
-    icon: cloudAndDeveops,
+    id:4,
+    icon:cloudAndDeveops,
     title: "Cloud Developement & DevOps",
     description: "Cloud computing and DevOps solutions to streamline your IT operations."
   },
   {
-    icon: softwareSupportAndMaintainance,
+    id:5,
+    icon:softwareSupportAndMaintainance,
     title: "Software Support And Maintainance",
     description: "Ensure your software runs seamlessly with our expert support and maintenance services."
   },
   {
-    icon: networkAndCybersecurity,
+    id:6,
+    icon:networkAndCybersecurity,
     title: "Network and Cybersecurity Solutions",
     description: "Fortify Your Business with Expert Cybersecurity and Networking Solutions.",
   },
   {
-    icon: iotSolution,
+    id:3,
+    icon:iotSolution,
     title: "IoT Solutions",
     description: "Experience the Power of Connectivity with Our IoT Services.",
   },
   {
-    icon: gisSoftwareDev,
+    id:7,
+    icon:gisSoftwareDev,
     title: "GIS Software Development and Services",
     description: "Empower your decisions with cutting-edge Geographic Information System (GIS) software.",
   }
@@ -50,6 +57,7 @@ const serviceCards = [
 ];
 
 const Services = () => {
+  const navigate = useNavigate();
   return (
     <section className="services py-8 px-2 text-center bg-gray-100">
       <h2 className="text-4xl font-semibold text-blue-600 mb-8 uppercase tracking-wider">Our Services</h2>
@@ -57,6 +65,7 @@ const Services = () => {
 
       {serviceCards.map((card, index) => (
       <div
+      onClick={() => navigate(`/ServicesPage${card.id}`)}
         key={index}
         className="service-card cursor-pointer bg-white  border-t-2 border-b-2 border-blue-600 rounded-lg shadow-md hover:shadow-lg transform transition-all duration-300 hover:scale-105 group flex-shrink-0 w-48 h-60 mb-4 relative overflow-hidden"
       >

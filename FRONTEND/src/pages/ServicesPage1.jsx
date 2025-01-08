@@ -19,10 +19,9 @@ import rubyIcon from "../assets/service_icons/ruby.png";
 import mongoIcon from "../assets/service_icons/mongo.png";
 import mysqlIcon from "../assets/service_icons/mysql.png";
 import postgresIcon from "../assets/service_icons/postgres.jpeg";
-const {databaseService,iotServices,cloudDevopsServices,softwareServices,networkAssessmentApproach,gisSoftwareDevelopment } =require('../DATA/details');
 
 
-const ServicesPage = () => {
+const ServicesPage1 = () => {
   const techIcons = [
     { name: "React", img: reactIcon },
     { name: "Node.js", img: nodeIcon },
@@ -195,4 +194,4 @@ const TechCard = ({ imgSrc }) => (
   </div>
 );
 
-export default ServicesPage;
+export default ServicesPage1;
